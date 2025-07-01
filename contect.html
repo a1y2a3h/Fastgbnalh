@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=], initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body dir="auto"> 
+    <style>
+       @font-face {
+            font-family:Wafeq-Regular;
+            src: url(./fonts/Wafeq-Regular.otf);
+        }
+        body {
+            font-family:Wafeq-Regular;
+            background-color: #48A6A7;
+    }
+
+        .back {
+            margin-top: 25px;
+        }
+        a {
+            text-decoration: none;
+            color: #000;
+            background-color: rgb(255, 255, 255);
+            padding: 13px;
+            border-radius: 14px;
+            margin: 25px;
+             box-shadow: 2px 2px 10px black;
+             
+        }
+        a:hover {
+            background-color: #48A6A7;
+            color: #ffffff;
+        }
+        .content {
+           background-color: white;
+           text-align: center;
+           padding: 20px;
+           margin-left: 250px;
+           margin-right: 250px;
+         
+           border-radius: 15px;
+           box-shadow: 2px 2px 10px black;
+         
+        }
+        input {
+            width: 50%;
+            padding: 8px;
+            margin: 9px;
+            border-radius: 8px;
+            border: black 1px solid;
+        }
+        .mess {
+           height: 160px;
+           width: 600px;
+        }
+        button {
+            padding: 15px;
+            background-color: #48A6A7;
+            color: #ffffff;
+            width: 60%;
+            align-items: center;
+            border-radius: 14px;
+            border: none;
+            font-family: KOSans-Medium;
+            margin-top: 3px;
+        }
+        button:hover {
+            background-color: #ffffff;
+            color: #48A6A7;
+            box-shadow: 2px 2px 10px black;
+        }
+        @media screen  and (max-width: 850px) {
+         .content {
+          padding: 0;
+          margin-left: 0;
+          margin-right: 0;
+          margin-bottom: 0;
+          height: 700px;
+           
+         }
+         .mess {
+            width: 80%;
+            height: 200px;
+            border-radius: 8px;
+           border: black 1px solid;
+         }
+         
+        }
+    </style>
+    <div class="back">
+        <a href="index.html"> رجوع </a> 
+
+    </div>
+    <div class="content"> 
+        <form action="">
+            <h1> اتصل بي </h1>
+            <h2> اذا كان لديك اي استفسار فلا تتردد في مراسلتي </h2>
+            <label for="name"> اسمك: </label>
+            <input type="text" placeholder="اكتب اسمك هنا ">
+            <br>
+            <label for="email"> بريدك الالكتروني :</label> 
+            <input type="email"placeholder="مثل: examble@gmail.com">
+            <br> 
+            <label for="message"> رسالتك :</label>
+            <br>
+            <textarea name="message" class="mess" placeholder=" اكتب رسالتك هنا..."></textarea>
+            <br>
+            <button type="submit"> ارسال </button>
+        </form>
+    </div>
+</body>
+</html>
